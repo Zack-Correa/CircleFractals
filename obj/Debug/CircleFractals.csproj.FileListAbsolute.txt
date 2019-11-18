@@ -1,0 +1,9 @@
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\bin\Debug\CircleFractals.exe.config
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\bin\Debug\CircleFractals.exe
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\bin\Debug\CircleFractals.pdb
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.csprojAssemblyReference.cache
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.Properties.Resources.resources
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.csproj.GenerateResource.cache
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.exe
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.pdb
+C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.CircleFractalsFr.resources
