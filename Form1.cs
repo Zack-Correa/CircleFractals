@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using CircleFractals.Shapes;
 
 namespace CircleFractals
 {
@@ -9,49 +10,47 @@ namespace CircleFractals
         public CircleFractalsFr()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
 
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            mainPanel.Refresh();
-            DrawCircles(mainPanel.Height/2,mainPanel.Width/2 , radiustxt.Text == "" ? 400 : float.Parse(radiustxt.Text), minSizetxt.Text == ""? 20 : int.Parse(minSizetxt.Text), true);
+            pictureBox1.Image = null;
+            Circle.image = new Bitmap(900, 900);
+            Circle.circleCounter = 0;
+            generateDrawing(true);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            mainPanel.Refresh();
-            DrawCircles(mainPanel.Height / 2, mainPanel.Width / 2, radiustxt.Text == "" ? 400 : float.Parse(radiustxt.Text), minSizetxt.Text == "" ? 20 : int.Parse(minSizetxt.Text), false);
+            pictureBox1.Image = null;
+            Circle.image = new Bitmap(900, 900);
+            Circle.circleCounter = 0;
+            generateDrawing(false);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            mainPanel.Refresh();
+            pictureBox1.Image = null;
+            Circle.image = new Bitmap(900, 900);
+            Circle.circleCounter = 0;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        private void DrawCircles(int x, int y, float radius, int minSize, bool inline)
+
+        private void generateDrawing(Boolean inline)
         {
-            Pen blackPen = new Pen(Color.Black, 0.05f);
-            Graphics panel = Graphics.FromHwnd(mainPanel.Handle);
-            Rectangle rect = new Rectangle(Convert.ToInt32(x - radius), Convert.ToInt32(y - radius), Convert.ToInt32(radius * 2), Convert.ToInt32(radius * 2));
-
-            panel.DrawEllipse(blackPen, rect);
-
-            if (radius > minSize)
-            {
-                DrawCircles(Convert.ToInt32(x + radius / 2), y, radius / 2, minSize, inline);
-                DrawCircles(Convert.ToInt32(x - radius / 2), y, radius / 2, minSize, inline);
-                if (!inline)
-                {
-                    DrawCircles(x, Convert.ToInt32(y - radius / 2), radius / 2, minSize, inline);
-                    DrawCircles(x, Convert.ToInt32(y + radius / 2), radius / 2, minSize, inline);
-                }
-            }
-
+            Circle cl = new Circle(pictureBox1.Height / 2, pictureBox1.Width / 2, radiustxt.Text == "" ? 400 : float.Parse(radiustxt.Text));
+            int maxsize = radiustxt.Text == "" ? 400 : int.Parse(radiustxt.Text);
+            int minsize = minSizetxt.Text == "" ? 20 : int.Parse(minSizetxt.Text);
+            float maxCircles = (maxsize / minsize);
+            Circle.circleMax = (int)Convert.ToInt64(Math.Pow(double.Parse(maxCircles.ToString()), 4));
+            Circle.updateImage = updateImage.Checked;
+            cl.DrawCircles(minsize, inline, pictureBox1);
         }
     }
 }

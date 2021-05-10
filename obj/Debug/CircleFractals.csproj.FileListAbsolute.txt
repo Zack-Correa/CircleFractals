@@ -7,3 +7,13 @@ C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFrac
 C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.exe
 C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.pdb
 C:\Users\Nescara\source\repos\CircleFractals\CircleFractals\obj\Debug\CircleFractals.CircleFractalsFr.resources
+C:\Users\zackl\Desktop\CircleFractals-master\bin\Debug\CircleFractals.exe.config
+C:\Users\zackl\Desktop\CircleFractals-master\bin\Debug\CircleFractals.exe
+C:\Users\zackl\Desktop\CircleFractals-master\bin\Debug\CircleFractals.pdb
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.csprojAssemblyReference.cache
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.CircleFractalsFr.resources
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.Properties.Resources.resources
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.csproj.GenerateResource.cache
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.csproj.CoreCompileInputs.cache
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.exe
+C:\Users\zackl\Desktop\CircleFractals-master\obj\Debug\CircleFractals.pdb

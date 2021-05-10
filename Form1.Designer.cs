@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainPanel = new System.Windows.Forms.Panel();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.minSizetxt = new System.Windows.Forms.TextBox();
@@ -37,14 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.updateImage = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // mainPanel
-            // 
-            this.mainPanel.Location = new System.Drawing.Point(12, 88);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(900, 900);
-            this.mainPanel.TabIndex = 0;
             // 
             // btnGenerate
             // 
@@ -52,7 +47,7 @@
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(162, 23);
             this.btnGenerate.TabIndex = 1;
-            this.btnGenerate.Text = "Generate \"inline\" fractal";
+            this.btnGenerate.Text = "Generate Inline Image";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
@@ -118,11 +113,31 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(15, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(900, 900);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // updateImage
+            // 
+            this.updateImage.AutoSize = true;
+            this.updateImage.Location = new System.Drawing.Point(640, 64);
+            this.updateImage.Name = "updateImage";
+            this.updateImage.Size = new System.Drawing.Size(93, 17);
+            this.updateImage.TabIndex = 9;
+            this.updateImage.Text = "Update Image";
+            this.updateImage.UseVisualStyleBackColor = true;
+            // 
             // CircleFractalsFr
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(928, 961);
+            this.ClientSize = new System.Drawing.Size(928, 1011);
             this.ControlBox = false;
+            this.Controls.Add(this.updateImage);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -131,19 +146,17 @@
             this.Controls.Add(this.minSizetxt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGenerate);
-            this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CircleFractalsFr";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CircleFractals";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox minSizetxt;
@@ -152,6 +165,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox updateImage;
     }
 }
 
